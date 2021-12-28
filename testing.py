@@ -18,6 +18,14 @@ def test_IButton(**kwargs) -> IButton:
     
     return bt
 
+def test_TButton(**kwargs) -> TButton:
+    bt = TButton()
+    bt.text = 'Olá Olá'
+    bt.background = True
+    bt.border = True
+    bt.hover = True
+    bt.press_anim = True
+    return bt
 
 apps: dict = {
     'Component': test_Component,
